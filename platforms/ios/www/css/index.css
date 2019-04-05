@@ -1,0 +1,159 @@
+/*Jackson Haile
+Calculator App
+4/1/19
+
+this is my calculator css project that looks(hopefully) just like the iphone calculator oes in the app.
+
+Sourses: w3schools, class demoes, and html color codes
+
+On my honor I have neither given nor recieved unauthorized aid  -Jackson*/
+
+/*import text font*/
+@import url('https://fonts.googleapis.com/css?family=Muli:200,400');
+/*set background color to black*/
+body{
+    background-color:black;
+}
+/*spacers below and above the top 0*/
+.sc1{
+    height:70px;
+}
+/*the 0 on the display area*/
+.sc2{
+    font-size:100px;
+    height:50px;
+    color:white;
+    text-align: right;
+    margin: 5px 20px 5px 5px;
+    font-family: 'Muli', sans-serif;
+    font-weight:200;
+}
+/*spacer*/
+.sc3{
+    height:50px;
+}
+/*set the offsets and font sizes for super/subscripts for the +/- sign*/
+sup {
+    vertical-align: 10px;
+    font-size: 20px;
+}
+sub {
+    vertical-align: 2px;
+    font-size: 20px;
+}
+
+
+.rowa{
+    margin: auto;
+    width: 400px;
+    overflow: hidden;
+}
+------------------------------------------------------------------
+.rowb{
+    margin: auto;
+    width: 400px;
+    overflow:hidden;
+}
+
+------------------------------------------------------------------
+.rowc{
+    margin: auto;
+    width: 400px;
+    overflow:hidden;
+}
+
+------------------------------------------------------------------
+.rowd{
+    margin: auto;
+    width: 400px;
+    overflow:hidden;
+}
+
+------------------------------------------------------------------
+.rowe{
+    margin: auto;
+    width: 400px;
+    overflow:hidden;
+}
+/*css for light grey buttons except for the +/- one*/
+.lg{
+background-color: #B2B2B2;
+text-transform: uppercase;
+float: left;
+color: black;
+border-radius: 50%;
+width:78px;
+min-height: 60px;
+padding-top: 18px;
+text-align:center;
+margin: 5px 5px 5px 5px;
+font-family:'Muli','pt sans', "Helvetice Neue", "Geneva", "Helvetica", "Arial", sans-serif;
+font-size:35px;
+font-weight:400;
+}
+/*css for the +/- light grey button*/
+.lg1{
+background-color: #B2B2B2;
+text-transform: uppercase;
+float: left;
+color: black;
+border-radius: 50%;
+width:78px;
+min-height: 60px;
+padding-top: 18px;
+text-align:center;
+margin: 5px 5px 5px 5px;
+font-family:'Muli','pt sans', "Helvetice Neue", "Geneva", "Helvetica", "Arial", sans-serif;
+font-size:35px;
+font-weight:500;
+letter-spacing: -6px;
+}
+/*css for the grey buttons except for the 0*/
+.gr{
+background-color:#303030;
+text-transform: uppercase;
+float: left;
+color: white;
+border-radius: 50%;
+width:78px;
+min-height: 60px;
+padding-top: 18px;
+text-align:center;
+margin: 5px 5px 5px 5px;
+font-family:'Muli','pt sans', "Helvetice Neue", "Geneva", "Helvetica", "Arial", sans-serif;
+font-size:35px;
+font-weight:400;
+}
+/*css for the orange buttons*/
+.or{
+background-color: #FF9D28;
+text-transform: lowercase;
+float: left;
+color: white;
+border-radius: 50%;
+width:78px;
+min-height: 60px;
+padding-top: 18px;
+text-align:center;
+margin: 5px 5px 5px 5px;
+font-family:'Muli','pt sans', "Helvetice Neue", "Geneva", "Helvetica", "Arial", sans-serif;
+font-size:35px;
+font-weight:400;
+}
+/*css for the 0 button (its wider so seperate form the others)*/
+.gr1{
+background-color: #303030;
+text-transform: uppercase;
+float: left;
+color: white;
+border-radius: 50px;
+width:166px;
+min-height: 60px;
+padding-top: 18px;
+text-align:center;
+margin: 5px 5px 5px 5px;
+font-family:"Muli", "pt sans", "Helvetice Neue", "Geneva", "Helvetica", "Arial", sans-serif;
+font-size:35px;
+font-weight:400;
+}
+
