@@ -46,4 +46,4 @@ var app = {
 };
 
 app.initialize();
-}); 
+});
