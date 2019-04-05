@@ -17,6 +17,11 @@
  * under the License.
  */
  $(document).ready(function(){
+    $("#seven").click(function(){
+        var display = $("#seven").val();
+        $(".sc2").html("<p>"+display+"</p>")
+
+    });
 
 var app = {
     // Application Constructor
