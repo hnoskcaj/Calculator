@@ -17,11 +17,29 @@
  * under the License.
  */
  $(document).ready(function(){
+    var number2 = 0;
+    var values = [];
+    var functions = [];
+    $(".sc2").html("<p>0</p>")
     $("#seven").click(function(){
-        var display = $("#seven").val();
-        $(".sc2").html("<p>"+display+"</p>")
+        values.push(7);
+        var number1 = number2;
+        var number2 = number1 + 7;
+        $(".sc2").html("<p>"+number2+"</p>")
+    // $("#eight").click(function(){
+    //     var value1 = 10*value1+8
+    //     $(".sc2").html("<p>"+value1+"</p>")
+    // $("#nine").click(function(){
+    //     var value1 = 10*value1+9
+    //     $(".sc2").html("<p>"+value1+"</p>")
+    // $("#times").click(function(){
+    //     functions.push("*");
+    //     $(".sc2").html("<p>x</p>")
 
     });
+    // });
+    // });
+    // });
 
 var app = {
     // Application Constructor

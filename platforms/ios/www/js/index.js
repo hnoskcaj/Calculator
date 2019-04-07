@@ -16,6 +16,15 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+ $(document).ready(function(){
+    var values = [];
+    var functions = [];
+    $("#seven").click(function(){
+        values.push(7);
+        $(".sc2").html("<p>7</p>")
+
+    });
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -44,3 +53,4 @@ var app = {
 };
 
 app.initialize();
+});
