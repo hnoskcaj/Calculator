@@ -17,15 +17,21 @@
  * under the License.
  */
  $(document).ready(function(){
+    var number1 = 0;
     var number2 = 0;
     var values = [];
     var functions = [];
     $(".sc2").html("<p>0</p>")
-    $("#seven").click(function(){
-        values.push(7);
-        var number1 = number2;
-        var number2 = number1 + 7;
+    $(".gr").click(function(){
+        number1 = number2
+        number2 = number1*10 + $(this).text()*1;
         $(".sc2").html("<p>"+number2+"</p>")
+    $("#clear").click(function(){
+        number1 = 0;
+        number2 = 0;
+        values = [];
+        functions = [];
+        $(".sc2").html("<p>0</p>")
     // $("#eight").click(function(){
     //     var value1 = 10*value1+8
     //     $(".sc2").html("<p>"+value1+"</p>")
@@ -37,7 +43,7 @@
     //     $(".sc2").html("<p>x</p>")
 
     });
-    // });
+    });
     // });
     // });
 
