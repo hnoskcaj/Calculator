@@ -23,7 +23,7 @@
     var functions = [];
     $(".sc2").html("<p>0</p>")
     $(".gr").click(function(){
-        number1 = number2
+        number1 = number2;
         number2 = number1*10 + $(this).text()*1;
         $(".sc2").html("<p>"+number2+"</p>")
     $("#clear").click(function(){
@@ -32,9 +32,15 @@
         values = [];
         functions = [];
         $(".sc2").html("<p>0</p>")
-    // $("#eight").click(function(){
-    //     var value1 = 10*value1+8
-    //     $(".sc2").html("<p>"+value1+"</p>")
+    $("#negative").click(function(){
+        number1 = number2;
+        number2 = number1*-1;
+        $(".sc2").html("<p>"+number2+"</p>")
+        alert("yay");
+    $("#percent").click(function(){
+        number1 = number2;
+        number2 = number1/100;
+        $(".sc2").html("<p>"+number2+"</p>")
     // $("#nine").click(function(){
     //     var value1 = 10*value1+9
     //     $(".sc2").html("<p>"+value1+"</p>")
@@ -44,8 +50,8 @@
 
     });
     });
-    // });
-    // });
+    });
+    });
 
 var app = {
     // Application Constructor
