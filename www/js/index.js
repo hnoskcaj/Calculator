@@ -20,7 +20,8 @@
     var number1 = 0;
     var number2 = 0;
     var temp1 = 0;
-    var temp2 = 0;
+    var ptemp = 0;
+    var mtemp = 0;
     var solveval = 0;
     var values = [];
     var functions = [];
@@ -84,20 +85,37 @@
         });
     $("#minus").click(function(){
         number1 = number2;
-        number2 = number1-temp1;
-        temp1 = 0
-        temp1 = number2;
-        $(".sc2").html("<p>"+number2+"</p>")
+        if(mtemp>0){
+        number2 = mtemp-number1;}
+        else{
+            number2 = number1+ptemp;}
+        ptemp = 0
+        mtemp = number2;
+        number2 = 0
+        $(".sc2").html("<p>"+mtemp+"</p>")
         });
     $("#plus").click(function(){
         number1 = number2;
-        number2 = number1+temp1;
-        temp1 = 0
-        temp1 = number2;
+         if(mtemp>0){
+        number2 = mtemp-number1;}
+        else{
+            number2 = number1+ptemp;}
+        ptemp = 0
+        ptemp = number2;
         number2 = 0
-        $(".sc2").html("<p>"+temp1+"</p>")
+        $(".sc2").html("<p>"+ptemp+"</p>")
 
         });
+    $("#equals").click(function(){
+        number1 = number2;
+         if(mtemp>0){
+        number2 = mtemp-number1;}
+        else{
+            number2 = number1+ptemp;}
+        ptemp = 0
+        mtemp=0
+        $(".sc2").html("<p>"+number2+"</p>")
+    })
 
 var app = {
     // Application Constructor

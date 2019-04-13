@@ -141,8 +141,8 @@ font-size:35px;
 font-weight:400;
 }
 /*css for the 0 button (its wider so seperate form the others)*/
-.or1{
-background-color: #FF9D28;
+.gr1{
+background-color: #303030;
 text-transform: capitolize;
 float: left;
 color: white;
