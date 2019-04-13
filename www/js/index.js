@@ -19,12 +19,13 @@
  $(document).ready(function(){
     var number1 = 0;
     var number2 = 0;
-    var temp1 = 0;
     var ptemp = 0;
+    var stemp = 0;
     var mtemp = 0;
-    var solveval = 0;
-    var values = [];
-    var functions = [];
+    var dtemp = 0;
+    // var solveval = 0;
+    // var values = [];
+    // var functions = [];
     // function solve(){
     //     for (x = functions.length; x > 0; x--){
     //         if(functions[x]==x){
@@ -58,7 +59,8 @@
     $("#clear").click(function(){
         number1 = 0;
         number2 = 0;
-        temp1 = 0;
+        ptemp = 0;
+        mtemp = 0;
         values = [];
         functions = [];
         $(".sc2").html("<p>0</p>")
@@ -80,27 +82,34 @@
         });
     $("#times").click(function(){
         number1 = number2;
-        number2 = 0-number1;
+        number2 = *number1;
         $(".sc2").html("<p>"+number2+"</p>")
         });
     $("#minus").click(function(){
         number1 = number2;
-        if(mtemp>0){
-        number2 = mtemp-number1;}
-        else{
+        if(stemp>0){
+            number2 = stemp-number1;}
+        else if(mtemp>0){
+            number2 = mtemp*number1}
+        else if(ptemp>0){
             number2 = number1+ptemp;}
+        else if(dtemp>0){
+            number2 = dtemp/number1}
         ptemp = 0
-        mtemp = number2;
+        stemp = 0
+        mtemp = 0
+        dtemp = 0
+        stemp = number2;
         number2 = 0
         $(".sc2").html("<p>"+mtemp+"</p>")
         });
     $("#plus").click(function(){
         number1 = number2;
-         if(mtemp>0){
-        number2 = mtemp-number1;}
+         if(stemp>0){
+        number2 = stemp-number1;}
         else{
             number2 = number1+ptemp;}
-        ptemp = 0
+        stemp = 0
         ptemp = number2;
         number2 = 0
         $(".sc2").html("<p>"+ptemp+"</p>")
