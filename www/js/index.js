@@ -19,39 +19,85 @@
  $(document).ready(function(){
     var number1 = 0;
     var number2 = 0;
+    var temp1 = 0;
+    var temp2 = 0;
+    var solveval = 0;
     var values = [];
     var functions = [];
+    // function solve(){
+    //     for (x = functions.length; x > 0; x--){
+    //         if(functions[x]==x){
+    //             solveval = (values[(values.length)-1]*1)*(values[(values.length)-2]*1)
+    //             values.slice(-1,-2)
+    //             values.push(solveval)
+    //         }
+    //         if(functions[x]==d){
+    //             solveval = (values[(values.length)-1]*1)/(values[(values.length)-2]*1)
+    //             values.slice(-1,-2)
+    //             values.push(solveval)
+    //         }
+    //         if(functions[x]==p){
+    //             solveval = (values[(values.length)-1]*1)+(values[(values.length)-2]*1)
+    //             values.slice(-1,-2)
+    //             values.push(solveval)
+    //         }
+    //         if(functions[x]==m){
+    //             solveval = (values[(values.length)-1]*1)-(values[(values.length)-2]*1)
+    //             values.slice(-1,-2)
+    //             values.push(solveval)
+    //         }
+    //     }
+    // }
     $(".sc2").html("<p>0</p>")
     $(".gr").click(function(){
         number1 = number2;
         number2 = number1*10 + $(this).text()*1;
         $(".sc2").html("<p>"+number2+"</p>")
+        });
     $("#clear").click(function(){
         number1 = 0;
         number2 = 0;
+        temp1 = 0;
         values = [];
         functions = [];
         $(".sc2").html("<p>0</p>")
+        });
     $("#negative").click(function(){
         number1 = number2;
-        number2 = number1*-1;
+        number2 = 0-number1;
         $(".sc2").html("<p>"+number2+"</p>")
-        alert("yay");
+        });
     $("#percent").click(function(){
         number1 = number2;
         number2 = number1/100;
         $(".sc2").html("<p>"+number2+"</p>")
-    // $("#nine").click(function(){
-    //     var value1 = 10*value1+9
-    //     $(".sc2").html("<p>"+value1+"</p>")
-    // $("#times").click(function(){
-    //     functions.push("*");
-    //     $(".sc2").html("<p>x</p>")
+        });
+    $("#divide").click(function(){
+        number1 = number2;
+        number2 = 0-number1;
+        $(".sc2").html("<p>"+number2+"</p>")
+        });
+    $("#times").click(function(){
+        number1 = number2;
+        number2 = 0-number1;
+        $(".sc2").html("<p>"+number2+"</p>")
+        });
+    $("#minus").click(function(){
+        number1 = number2;
+        number2 = number1-temp1;
+        temp1 = 0
+        temp1 = number2;
+        $(".sc2").html("<p>"+number2+"</p>")
+        });
+    $("#plus").click(function(){
+        number1 = number2;
+        number2 = number1+temp1;
+        temp1 = 0
+        temp1 = number2;
+        number2 = 0
+        $(".sc2").html("<p>"+temp1+"</p>")
 
-    });
-    });
-    });
-    });
+        });
 
 var app = {
     // Application Constructor
